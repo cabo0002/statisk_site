@@ -1,0 +1,142 @@
+/****** Menu ******/
+
+header {
+  display: flex;
+  justify-content: center; /* Change to center */
+  align-items: center;
+  padding: 30px;
+  background-color: #f2f3f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.menu {
+  display: flex;
+  justify-content: center; /* Center items within the menu */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure it takes full width */
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  padding: 10%;
+  color: #ee2c29;
+  text-decoration: none;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 110%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* understregning for når man har musen over linket */
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Permanent understregning for det aktive link */
+.menu a.active {
+  text-decoration: underline;
+}
+
+/*** menu slut ***/
+body {
+  margin: 0rem;
+  background-color: #f7f6f8;
+  box-sizing: border-box;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+main {
+  margin: 3rem;
+  text-wrap: pretty;
+}
+
+/* FORSIDE */
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 10rem;
+  color: #ee2c29;
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+
+.stativ {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+/* KATEGORI */
+
+h2 {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+}
+
+h3,
+p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.kategoriliste {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.kategoriliste a {
+  background-color: #ee2c29;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.produktliste_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.produktliste_container a {
+  background-color: #ee2c29;
+  color: white;
+  padding: 0.5rem;
+}
+
+.produkt_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.prdukt_billede {
+  width: 65%;
+}

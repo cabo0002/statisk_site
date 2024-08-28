@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karma:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Produktliste</title>
     <link rel="stylesheet" href="style.css">
 
@@ -11,40 +18,48 @@
 
 <body>
     <header>
-        <a href="index.html">
-            <h1>Tøjbutikken</h1>
-        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="kategori.html">Kategori</a></li>
+                <li><a class="active" href="produktliste.html">Produktliste</a></li>
+                <li><a href="produkt.html">Produkt</a></li>
+            </ul>
+        </nav>
+
     </header>
     <main>
         <h2>Trøjer</h2>
-        <article class="varer">
-            <img src="bukser.webp" alt="bukser">
-            <h3>Bukser</h3>
-            <p class="subtle">Tshirts | Puma</p>
-            <p class="price">DKK 1595,-</p>
-            <a href="product.html">Read More</a>
-        </article>
-        <article class="on_sale">
-            <img src="tshirt.webp" alt="t-shirt">
-            <h3>Bukser</h3>
-            <p class="subtle">Tshirts | Puma</p>
-            <p class="price">DKK 1595,-</p>
-            <a href="product.html">Read More</a>
-        </article>
-        <article class="sold_out">
-            <img src="body.jpg" alt="body">
-            <h3>Bukser</h3>
-            <p class="subtle">Tshirts | Puma</p>
-            <p class="price">DKK 1595,-</p>
-            <a href="product.html">Read More</a>
-        </article>
-        <article class="sold_and_sale">
-            <img src="bold.jpg" alt="bold">
-            <h3>Bukser</h3>
-            <p class="subtle">Tshirts | Puma</p>
-            <p class="price">DKK 1595,-</p>
-            <a href="product.html">Read More</a>
-        </article>
+        <div class="produktliste_container">
+            <article class="varer">
+                <img src="bukser.webp" alt="bukser">
+                <h3>Bukser</h3>
+                <p class="subtle">Tshirts | Puma</p>
+                <p class="price">DKK 1595,-</p>
+                <a href="produkt.html">Read More</a>
+            </article>
+            <article class="on_sale">
+                <img src="tshirt.webp" alt="t-shirt">
+                <h3>Bukser</h3>
+                <p class="subtle">Tshirts | Puma</p>
+                <p class="price">DKK 1595,-</p>
+                <a href="produkt.html">Read More</a>
+            </article>
+            <article class="sold_out">
+                <img src="body.jpg" alt="body">
+                <h3>Bukser</h3>
+                <p class="subtle">Tshirts | Puma</p>
+                <p class="price">DKK 1595,-</p>
+                <a href="produkt.html">Read More</a>
+            </article>
+            <article class="sold_and_sale">
+                <img src="bold.jpg" alt="bold">
+                <h3>Bukser</h3>
+                <p class="subtle">Tshirts | Puma</p>
+                <p class="price">DKK 1595,-</p>
+                <a href="produkt.html">Read More</a>
+            </article>
+        </div>
     </main>
     <footer></footer>
 </body>
